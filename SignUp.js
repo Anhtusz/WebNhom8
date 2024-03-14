@@ -32,7 +32,7 @@ function saveRegistration() {
 
     localStorage.setItem("usersdata", JSON.stringify(usersData));
     setTimeout(function() {
-        window.location.href = "index.html";
+        window.location.href = "Login.html";
     }, 1000);
 }
 document.getElementById("registerButton").addEventListener("click", saveRegistration);
@@ -51,5 +51,5 @@ function showMessage(message, type) {
   document.getElementById("signinLink").addEventListener("click", function(event) {
     event.preventDefault();
   
-    window.location.href = "index.html";
+    window.location.href = "Login.html";
   });
