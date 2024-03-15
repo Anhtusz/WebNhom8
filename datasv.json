@@ -1,0 +1,17 @@
+[
+    {
+      "name": "Nguyễn Văn A",
+      "ngaysinh": "2005-05-01",
+      "lop": "10A"
+    },
+    {
+      "name": "Trần Thị B",
+      "ngaysinh": "2004-10-15",
+      "lop": "11B"
+    },
+    {
+      "name": "Lê Văn C",
+      "ngaysinh": "2006-02-28",
+      "lop": "9C"
+    }
+  ]

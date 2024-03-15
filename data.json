@@ -1,0 +1,20 @@
+[
+    {
+      "name": "Kì thi 1",
+      "description": "Giữa kì",
+      "createdDate": "2024-03-02",
+      "type": "Trắc nghiệm"
+    },
+    {
+      "name": "Kì thi 2",
+      "description": "Kiểm tra",
+      "createdDate": "2024-03-05",
+      "type": "Trắc nghiệm"
+    },
+    {
+      "name": "Kì thi 3",
+      "description": "Cuối kì",
+      "createdDate": "2024-03-06",
+      "type": "Trắc nghiệm"
+    }
+  ]
