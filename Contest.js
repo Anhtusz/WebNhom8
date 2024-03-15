@@ -48,7 +48,6 @@ function displayActivityData(data) {
 
     optionsCell.appendChild(editButton);
     optionsCell.appendChild(deleteButton);
-
     row.appendChild(nameCell);
     row.appendChild(descriptionCell);
     row.appendChild(createdDateCell);
@@ -68,3 +67,53 @@ function displayActivityData(data) {
         document.addEventListener('DOMContentLoaded', () => {
             loadActivityData();
         });
+
+// Lấy các phần tử HTML
+const addButton = document.getElementById('addButton');
+const popupContainer = document.getElementById('popupContainer');
+const popupTitle = document.getElementById('popupTitle');
+const nameInput = document.getElementById('nameInput');
+const descriptionInput = document.getElementById('descriptionInput');
+const saveButton = document.getElementById('saveButton');
+const cancelButton = document.getElementById('cancelButton');
+
+// Hiển thị popup
+function showPopup(title) {
+  popupContainer.style.display = 'block';
+  popupTitle.textContent = title;
+}
+
+// Ẩn popup
+function hidePopup() {
+  popupContainer.style.display = 'none';
+}
+
+// Xử lý sự kiện khi nhấn nút "Thêm kì thi"
+addButton.addEventListener('click', () => {
+  showPopup('Thêm kì thi');
+});
+
+// Xử lý sự kiện khi nhấn nút "Lưu"
+saveButton.addEventListener('click', () => {
+  const name = nameInput.value;
+  const description = descriptionInput.value;
+
+  // Thực hiện lưu dữ liệu kì thi
+  // ...
+
+  // Đóng popup
+  hidePopup();
+});
+
+// Xử lý sự kiện khi nhấn nút "Hủy"
+cancelButton.addEventListener('click', () => {
+  // Đóng popup
+  hidePopup();
+});
+
+// Xử lý sự kiện khi nhấn phím Esc để đóng popup
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    hidePopup();
+  }
+});
